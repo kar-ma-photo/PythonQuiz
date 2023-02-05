@@ -1,0 +1,27 @@
+{% extends 'homepage/base.html' %}
+{% block tittle %}Результаты теста{% endblock%}
+{% block content %}
+
+
+
+
+<div class="container ">
+
+    <div class="card-columns" style="padding: 10px; margin: 20px;">
+        <div class="card" align="centre " style="width: 32rem; border:5px black solid">
+
+            <div class="card-body">
+
+
+                <p class="card-text">Результат: {{percent}}%</p>
+                <p class="card-text">Время: {{time}} seconds</p>
+                <p class="card-text">Правильно: {{correct}}</p>
+                <p class="card-text">Неправильно: {{wrong}}</p>
+                <p class="card-text">Всего вопросов: {{total}}</p>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

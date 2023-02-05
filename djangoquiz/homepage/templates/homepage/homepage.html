@@ -1,0 +1,35 @@
+{% extends 'homepage/base.html' %}
+{% block tittle %}Главная{% endblock%}
+{% block content %}
+   <div class="bg-dark text-secondary px-4 py-5 text-center">
+    <div class="py-5">
+      <h1 class="display-5 fw-bold text-white">Выберете тему</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="fs-5 mb-4">Выберете блок, чтобы проверить ваши знания</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="{% url 'pythonpage' %}">
+                <button type="button" class="btn btn-outline-light btn-lg px-4">Основы python</button>
+                </a>
+            <a href="">
+                <button type="button" class="btn btn-outline-light btn-lg px-4">SQL</button>
+                </a>
+            <a href="">
+                <button type="button" class="btn btn-outline-light btn-lg px-4">Запрос      </button>
+                </a>
+            <a href="">
+                <button type="button" class="btn btn-outline-light btn-lg px-4">Linux</button>
+                </a>
+            <a href="">
+                <button type="button" class="btn btn-outline-light btn-lg px-4">Базы данных</button>
+                </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+
+
+
+
